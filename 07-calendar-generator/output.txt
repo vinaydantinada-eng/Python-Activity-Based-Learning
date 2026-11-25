@@ -1,0 +1,102 @@
+============================================================
+  NESTED LOOP CALENDAR GENERATOR
+============================================================
+
+------------------------------------------------------------
+  CALENDAR 1  (valid month starting on Wednesday)
+------------------------------------------------------------
+          January 2025       
+  ---------------------------
+ Mon Tue Wed Thu Fri Sat Sun
+  ---------------------------
+           1   2   3   4   5
+   6   7   8   9  10  11  12
+  13  14  15  16  17  18  19
+  20  21  22  23  24  25  26
+  27  28  29  30  31
+  ---------------------------
+  31 days, 5 week rows, starts on Wed
+
+------------------------------------------------------------
+  CALENDAR 2  (valid February of a non-leap year)
+------------------------------------------------------------
+         February 2025       
+  ---------------------------
+ Mon Tue Wed Thu Fri Sat Sun
+  ---------------------------
+                       1   2
+   3   4   5   6   7   8   9
+  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23
+  24  25  26  27  28
+  ---------------------------
+  28 days, 5 week rows, starts on Sat
+
+------------------------------------------------------------
+  CALENDAR 3  (leap February - 29 days)
+------------------------------------------------------------
+         February 2024       
+  ---------------------------
+ Mon Tue Wed Thu Fri Sat Sun
+  ---------------------------
+                       1   2
+   3   4   5   6   7   8   9
+  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23
+  24  25  26  27  28  29
+  ---------------------------
+  29 days, 5 week rows, starts on Sat
+
+------------------------------------------------------------
+  CALENDAR 4  (valid month starting on Sunday)
+------------------------------------------------------------
+         December 2025       
+  ---------------------------
+ Mon Tue Wed Thu Fri Sat Sun
+  ---------------------------
+                           1
+   2   3   4   5   6   7   8
+   9  10  11  12  13  14  15
+  16  17  18  19  20  21  22
+  23  24  25  26  27  28  29
+  30  31
+  ---------------------------
+  31 days, 6 week rows, starts on Sun
+
+------------------------------------------------------------
+  CALENDAR 5  (INVALID start day index 8)
+------------------------------------------------------------
+  INVALID INPUT - calendar not generated:
+     - starting weekday must be 0 (Mon) to 6 (Sun), got 8
+
+------------------------------------------------------------
+  CALENDAR 6  (INVALID month length - 31 days supplied for April)
+------------------------------------------------------------
+  INVALID INPUT - calendar not generated:
+     - April 2025 has 30 days, but 31 were supplied
+
+------------------------------------------------------------
+  CALENDAR 7  (INVALID month index 12)
+------------------------------------------------------------
+  INVALID INPUT - calendar not generated:
+     - month index 12 is outside 0-11
+
+============================================================
+  MONTH LENGTH REFERENCE FOR 2025 (non-leap year)
+============================================================
+  January    : 31 days
+  February   : 28 days
+  March      : 31 days
+  April      : 30 days
+  May        : 31 days
+  June       : 30 days
+  July       : 31 days
+  August     : 31 days
+  September  : 30 days
+  October    : 31 days
+  November   : 30 days
+  December   : 31 days
+  February   : 29 days  (leap year)
+
+  Note: calendars are generated from a supplied starting weekday;
+  the program does not use any date library.
