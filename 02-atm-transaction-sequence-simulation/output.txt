@@ -1,0 +1,57 @@
+==========================================================================
+  ATM TRANSACTION SEQUENCE SIMULATION
+==========================================================================
+  Opening balance : Rs. 12500.00
+  Rules: minimum balance Rs. 1000.00, daily withdrawal limit Rs. 25000.00,
+         single withdrawal between Rs. 100.00 and Rs. 20000.00,
+         deposit limit Rs. 100000.00
+--------------------------------------------------------------------------
+ID     Type Amount       Balance      Status       Reason if rejected
+--------------------------------------------------------------------------
+TX01   D    5000.00      17500.00     ACCEPTED     -
+TX02   W    2000.00      15500.00     ACCEPTED     -
+TX03   W    15000.00     15500.00     REJECTED     would leave balance below minimum Rs. 1000
+TX04   W    22000.00     15500.00     REJECTED     above single withdrawal limit Rs. 20000
+TX05   D    120000.00    15500.00     REJECTED     deposit above limit Rs. 100000
+TX06   X    500.00       15500.00     REJECTED     unknown transaction type 'X'
+TX07   W    50.00        15500.00     REJECTED     below minimum withdrawal Rs. 100
+TX08   W    4000.00      11500.00     ACCEPTED     -
+TX09   D    2500.00      14000.00     ACCEPTED     -
+TX10   W    13500.00     14000.00     REJECTED     would leave balance below minimum Rs. 1000
+--------------------------------------------------------------------------
+
+==========================================================================
+  TRANSACTION SUMMARY
+==========================================================================
+  Transactions processed : 10
+  Accepted               : 4
+  Rejected               : 6
+  Success rate           : 40.0%
+--------------------------------------------------------------------------
+  Opening balance        : Rs.   12500.00
+  Total deposits         : Rs.    7500.00
+  Total withdrawals      : Rs.    6000.00
+  Closing balance        : Rs.   14000.00
+--------------------------------------------------------------------------
+
+Next day (limit counters reset):
+==========================================================================
+  ATM TRANSACTION SEQUENCE SIMULATION
+==========================================================================
+  Opening balance : Rs. 14000.00
+  Rules: minimum balance Rs. 1000.00, daily withdrawal limit Rs. 25000.00,
+         single withdrawal between Rs. 100.00 and Rs. 20000.00,
+         deposit limit Rs. 100000.00
+--------------------------------------------------------------------------
+ID     Type Amount       Balance      Status       Reason if rejected
+--------------------------------------------------------------------------
+TX11   D    20000.00     34000.00     ACCEPTED     -
+TX12   W    9000.00      25000.00     ACCEPTED     -
+TX13   W    9000.00      16000.00     ACCEPTED     -
+TX14   W    9000.00      16000.00     REJECTED     daily withdrawal limit would be crossed
+TX15   W    9000.00      16000.00     REJECTED     daily withdrawal limit would be crossed
+--------------------------------------------------------------------------
+  Overnight closing balance : Rs. 16000.00
+
+Note: all transactions and figures are hypothetical.
+Check passed: closing balance never fell below Rs. 1000.00.
