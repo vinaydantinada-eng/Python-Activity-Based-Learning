@@ -1,0 +1,44 @@
+==============================================================================
+  TEXT COMPRESSION USING CHARACTER RUNS (RUN-LENGTH ENCODING)
+==============================================================================
+Original               Encoded                        Orig    Enc    Saved  Verdict
+------------------------------------------------------------------------------
+AAAABBBCCDAA           A4B3C2D1A2                       12     10    16.7%  compressed
+WWWWWWWWWWWWBWWWW...   W12B1W12B3W24B1                  53     15    71.7%  compressed
+ABCDEF                 A1B1C1D1E1F1                      6     12  -100.0%  NOT beneficial
+A                      A1                                1      2  -100.0%  NOT beneficial
+                                                         0      0     0.0%  no change
+aaabbbaaabbbaaabbb     a3b3a3b3a3b3                     18     12    33.3%  compressed
+mississippi            m1i1s2i1s2i1p2i1                 11     16   -45.5%  NOT beneficial
+AAAAA                  A5                                5      2    60.0%  compressed
+------------------------------------------------------------------------------
+  Total original length : 106 characters
+  Total encoded length  : 69 characters
+  Overall saving        : 34.9%
+  Strings compressed    : 4   not beneficial: 3   unchanged: 1
+
+------------------------------------------------------------------------------
+  ROUND-TRIP VERIFICATION (decode(encode(x)) = x)
+------------------------------------------------------------------------------
+  Sample 1: OK
+  Sample 2: OK
+  Sample 3: OK
+  Sample 4: OK
+  Sample 5: OK
+  Sample 6: OK
+  Sample 7: OK
+  Sample 8: OK
+
+  All samples decoded back to the original text exactly.
+
+------------------------------------------------------------------------------
+  OBSERVATION
+------------------------------------------------------------------------------
+  A run of length 1 becomes two characters (letter + '1'), so text
+  without repeated letters (like ABCDEF) grows by 100%. Compression
+  only pays off when the average run length is greater than 2.
+
+  Example long run: A12
+  Example no runs : A1B1C1D1E1F1 (longer than the original)
+
+All sample strings are hypothetical and used only for this activity.
