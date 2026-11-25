@@ -1,0 +1,59 @@
+==================================================================================
+  EXAMINATION ANSWER EVALUATION  (negative marking)
+==================================================================================
+  Questions: 20   Correct: +4   Wrong: -1   Blank: 0   Maximum: 80
+  Answer key : ABCDACBDABCDADCBBACD
+----------------------------------------------------------------------------------
+Roll       Name      Corr Wrong Blank  Score  Percent  Grade
+----------------------------------------------------------------------------------
+26000477   Vinay       18     0     2     72    90.0%  A+
+26000478   Meghana     20     0     0     80   100.0%  A+
+26000479   Arjun       17     2     1     66    82.5%  A
+26000480   Sneha       18     2     0     70    87.5%  A
+26000481   Rohit        0     0    20      0     0.0%  F (fail)
+26000482   Divya        5    15     0      5     6.2%  F (fail)
+----------------------------------------------------------------------------------
+
+  ANSWER-WISE PATTERN  ( + correct, x wrong, - blank )
+  Question:  1         2         3
+             12345678901234567890
+  Key       : ABCDACBDABCDADCBBACD
+  Vinay     : ++++++++++++++++++--
+  Meghana   : ++++++++++++++++++++
+  Arjun     : ++x+x++++++++-++++++
+  Sneha     : ++++++++++++++++++xx
+  Rohit     : --------------------
+  Divya     : x+xxxx+xx+xxxxx++xxx
+
+----------------------------------------------------------------------------------
+  Topper        : Meghana (26000478) with 80 marks (100.0%)
+  Class average : 48.83 marks out of 80
+  Passed        : 4    Failed: 2
+
+----------------------------------------------------------------------------------
+  QUESTION-WISE ANALYSIS (across all students)
+  Q  Key  Correct  Wrong  Blank   Remark
+  1   A    4        1      1      
+  2   B    5        0      1      well answered
+  3   C    3        2      1      
+  4   D    4        1      1      
+  5   A    3        2      1      
+  6   C    4        1      1      
+  7   B    5        0      1      well answered
+  8   D    4        1      1      
+  9   A    4        1      1      
+  10  B    5        0      1      well answered
+  11  C    4        1      1      
+  12  D    4        1      1      
+  13  A    4        1      1      
+  14  D    3        1      2      
+  15  C    4        1      1      
+  16  B    5        0      1      well answered
+  17  B    5        0      1      well answered
+  18  A    4        1      1      
+  19  C    2        2      2      weakly answered
+  20  D    2        2      2      weakly answered
+
+  Most often missed question: Q19 (4 of 6 students did not score on it).
+
+All names, roll numbers and responses are hypothetical.
