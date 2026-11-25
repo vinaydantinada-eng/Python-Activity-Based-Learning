@@ -1,0 +1,70 @@
+==========================================================
+  ADVANCED NUMERIC PATTERN GENERATOR
+==========================================================
+  1. Hollow diamond (stars)
+  2. Symmetric number pyramid
+  3. Hollow number diamond
+  Valid dimension range: 1 to 15
+
+----------------------------------------------------------
+  RUN 1  (pattern = 1, dimension = 5, valid input)
+----------------------------------------------------------
+  Hollow diamond of size 5:
+
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+
+
+----------------------------------------------------------
+  RUN 2  (pattern = 2, dimension = 6, valid input)
+----------------------------------------------------------
+  Symmetric number pyramid of size 6:
+
+     1
+    121
+   12321
+  1234321
+ 123454321
+12345654321
+
+
+----------------------------------------------------------
+  RUN 3  (pattern = 3, dimension = 5, valid input)
+----------------------------------------------------------
+  Hollow number diamond of size 5:
+
+    1
+   2 2
+  3   3
+ 4     4
+5       5
+ 4     4
+  3   3
+   2 2
+    1
+
+
+----------------------------------------------------------
+  RUN 4  (pattern = 1, dimension = 0, size too small)
+----------------------------------------------------------
+  INVALID INPUT - pattern not generated:
+     - dimension 0 is too small (minimum 1)
+
+----------------------------------------------------------
+  RUN 5  (pattern = 2, dimension = 18, size too large)
+----------------------------------------------------------
+  INVALID INPUT - pattern not generated:
+     - dimension 18 is too large (maximum 15)
+
+----------------------------------------------------------
+  RUN 6  (pattern = 5, dimension = 4, unknown pattern choice)
+----------------------------------------------------------
+  INVALID INPUT - pattern not generated:
+     - pattern choice must be 1, 2 or 3 (got 5)
