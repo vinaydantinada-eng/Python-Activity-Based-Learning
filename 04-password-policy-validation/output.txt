@@ -1,0 +1,46 @@
+========================================================================
+  PASSWORD POLICY VALIDATION ENGINE
+========================================================================
+  Policy: length 10-20, >=1 upper, >=1 lower, >=2 digits,
+          >=1 special from @#$%&*!?_, no run longer than 2,
+          any character at most 3 times, no dictionary words.
+------------------------------------------------------------------------
+
+ 1. Su******              ->  WEAK (1 rule broken)
+      FAILED: length 8 is below minimum 10
+
+ 2. Tr***********         ->  ACCEPTABLE
+      All conditions satisfied.
+
+ 3. pa***********         ->  WEAK (2 rules broken)
+      FAILED: needs at least 1 uppercase letter(s)
+      FAILED: contains prohibited word 'password'
+
+ 4. C0*************       ->  STRONG
+      All conditions satisfied.
+
+ 5. Su**********          ->  WEAK (1 rule broken)
+      FAILED: character repeated 3 times in a row (max 2)
+
+ 6. Mo************        ->  STRONG
+      All conditions satisfied.
+
+ 7. ad***********         ->  WEAK (2 rules broken)
+      FAILED: needs at least 2 digits (found 1)
+      FAILED: contains prohibited word 'admin'
+
+ 8. Tr***********         ->  ACCEPTABLE
+      All conditions satisfied.
+
+ 9. R@***********         ->  WEAK (2 rules broken)
+      FAILED: character repeated 4 times in a row (max 2)
+      FAILED: character '5' appears 4 times (max 3)
+
+10. Br**********          ->  ACCEPTABLE
+      All conditions satisfied.
+
+------------------------------------------------------------------------
+  Summary: 5 valid, 5 invalid out of 10 sample passwords.
+  Most frequently failed rule: character categories (2 times).
+
+All passwords are hypothetical samples for this activity.
