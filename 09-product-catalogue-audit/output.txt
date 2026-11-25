@@ -1,0 +1,68 @@
+======================================================================================
+  TUPLE-BASED PRODUCT CATALOGUE AUDIT
+======================================================================================
+  Records supplied : 16
+  Reorder level    : stock <= 20 units
+  Price sanity limit: Rs. 5000.00
+
+--------------------------------------------------------------------------------------
+  VALIDATION
+--------------------------------------------------------------------------------------
+  Record 10  (P110):
+      - price 0.00 is not positive
+  Record 11  (P111):
+      - price -12.00 is not positive
+  Record 12  (P112):
+      - stock quantity -5 cannot be negative
+  Record 13  (P113):
+      - product name is missing or too short
+  Record 15  (P114):
+      - price 7800.00 is above the sanity limit 5000.00
+
+  DUPLICATE product codes:
+      - P103 appears 2 times
+
+  5 invalid record(s), 1 duplicate code(s).
+
+--------------------------------------------------------------------------------------
+  INVENTORY VALUE (valid records only)
+--------------------------------------------------------------------------------------
+Code   Product                 Price   Stock    Reorder          Value  Status
+--------------------------------------------------------------------------------------
+P101   Notebook A5             45.50     120         50        5460.00  OK
+P102   Gel Pen Blue            10.00      15        100         150.00  LOW - REORDER
+P103   Geometry Box            95.00      40         30        3800.00  OK
+P104   Highlighter Set        180.00       8         40        1440.00  LOW - REORDER
+P105   Stapler Large          260.00       0         25           0.00  OUT OF STOCK
+P106   Marker Black            35.00     210        100        7350.00  OK
+P107   Drawing Sheet            8.50     500        200        4250.00  OK
+P108   Calculator FX         1250.00      12         10       15000.00  LOW - REORDER
+P109   File Folder             25.00      95         50        2375.00  OK
+P115   Wax Crayons            110.00     140         60       15400.00  OK
+--------------------------------------------------------------------------------------
+  Valid products   : 10
+  Total units      : 1140
+  Total stock value: Rs. 55225.00
+  Highest value    : Wax Crayons (Rs. 15400.00)
+
+--------------------------------------------------------------------------------------
+  REPLENISHMENT PLAN (stock <= 20)
+--------------------------------------------------------------------------------------
+Code   Product              Stock Reorder Qty   Cost (Rs.)
+--------------------------------------------------------------------------------------
+P102   Gel Pen Blue            15        100      1000.00
+P104   Highlighter Set          8         40      7200.00
+P105   Stapler Large            0         25      6500.00
+P108   Calculator FX           12         10     12500.00
+--------------------------------------------------------------------------------------
+  Estimated replenishment cost: Rs. 27200.00
+
+--------------------------------------------------------------------------------------
+  PRICE BAND SPLIT (valid records)
+--------------------------------------------------------------------------------------
+  Below Rs 50    :  5 product(s), stock value Rs.   19585.00
+  Rs 50 - 200    :  4 product(s), stock value Rs.   24440.00
+  Rs 200 - 500   :  1 product(s), stock value Rs.       0.00
+  Above Rs 500   :  1 product(s), stock value Rs.   15000.00
+
+All product data is hypothetical and used only for this activity.
