@@ -1,0 +1,68 @@
+==============================================================
+  PROGRESSIVE ELECTRICITY BILLING SYSTEM
+==============================================================
+
+DETAILED BILL BREAKDOWN - H-101, month Mar (145 units):
+   Energy charge (slabs) : Rs.   439.00
+   Fixed charge          : Rs.    50.00
+   Electricity duty  5.0% : Rs.    21.95
+   Rebate  2.0%           : Rs.   -10.22
+   TOTAL PAYABLE         : Rs.   500.73
+
+==============================================================
+  MONTH-WISE BILL COMPARISON  -  Household H-101
+==============================================================
+Month   Units    Bill (Rs.)   Rise %     Remark
+--------------------------------------------------------------
+Jan     112      358.11       0.0        
+Feb     118      384.04       7.2        
+Mar     145      500.73       30.4       UNUSUAL INCREASE
+Apr     160      565.56       12.9       
+May     158      556.91       -1.5       lower than previous
+Jun     170      608.78       9.3        
+--------------------------------------------------------------
+Average bill over 6 months : Rs. 495.69
+Highest bill : Jun  (Rs. 608.78)
+
+==============================================================
+  MONTH-WISE BILL COMPARISON  -  Household H-102
+==============================================================
+Month   Units    Bill (Rs.)   Rise %     Remark
+--------------------------------------------------------------
+Jan     240      989.51       0.0        
+Feb     255      1083.66      9.5        
+Mar     310      1428.89      31.9       UNUSUAL INCREASE
+Apr     330      1554.43      8.8        
+May     420      2154.33      38.6       UNUSUAL INCREASE
+Jun     455      2435.25      13.0       
+--------------------------------------------------------------
+Average bill over 6 months : Rs. 1607.68
+Highest bill : Jun  (Rs. 2435.25)
+
+==============================================================
+  MONTH-WISE BILL COMPARISON  -  Household H-103
+==============================================================
+Month   Units    Bill (Rs.)   Rise %     Remark
+--------------------------------------------------------------
+Jan     88       275.38       0.0        
+Feb     95       293.39       6.5        
+Mar     250      1052.28      258.7      UNUSUAL INCREASE
+Apr     105      327.86       -68.8      lower than previous
+May     98       301.11       -8.2       lower than previous
+Jun     101      310.57       3.1        
+--------------------------------------------------------------
+Average bill over 6 months : Rs. 426.77
+Highest bill : Mar  (Rs. 1052.28)
+
+==============================================================
+  UNUSUAL INCREASE SUMMARY
+==============================================================
+  H-101 : Feb -> Mar : +30.4%  (Rs. 384.04 -> Rs. 500.73)
+  H-102 : Feb -> Mar : +31.9%  (Rs. 1083.66 -> Rs. 1428.89)
+  H-102 : Apr -> May : +38.6%  (Rs. 1554.43 -> Rs. 2154.33)
+  H-103 : Feb -> Mar : +258.7%  (Rs. 293.39 -> Rs. 1052.28)
+
+  Sharpest rise: H-103 in Mar (+258.7%).
+  Recommendation: verify meter reading and check for faulty appliances.
+
+All values are hypothetical and used only for this activity.
