@@ -1,0 +1,50 @@
+====================================================================================
+  BUS PASSENGER OCCUPANCY SIMULATION
+====================================================================================
+  Route  : 8 stops
+  Capacity: 50 seats + 20 standing = 70 passengers
+------------------------------------------------------------------------------------
+Stop Name                     Board   Alight  Onboard   Util  Status
+------------------------------------------------------------------------------------
+0    Central Bus Stand           25        0       25  35.7%  OK
+1    Gandhi Nagar                34        3       56  80.0%  OK
+2    Railway Station             26        8       74 105.7%  OVER CAPACITY
+3    Benz Circle                 14       17       71 101.4%  OVER CAPACITY
+4    Auto Nagar                   9       21       59  84.3%  OK
+5    Ramavarappadu                6       15       50  71.4%  OK
+6    Gannavaram                   4        9       45  64.3%  OK
+7    Airport Road                 2       12       35  50.0%  OK
+------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------
+  TRIP SUMMARY
+------------------------------------------------------------------------------------
+  Total boarded at all stops : 120
+  Total alighted             : 85
+  Passengers still on board  : 35
+  Peak passengers            : 74 at Railway Station (105.7% of capacity)
+  Capacity violations        : 2
+  Invalid stop records       : 0
+
+------------------------------------------------------------------------------------
+  RECONCILIATION CHECK
+------------------------------------------------------------------------------------
+  Boarded - alighted = 120 - 85 = 35
+  Final passengers on board = 35
+  Check PASSED: passenger count reconciles.
+
+------------------------------------------------------------------------------------
+  SECOND TRIP - WITH PROBLEM RECORDS (validation demo)
+------------------------------------------------------------------------------------
+  Stop 0 (Central Bus Stand): board 30, alight 0 -> onboard 30 (OK)
+  Stop 1 (Gandhi Nagar): board 25, alight 10 -> onboard 45 (OK)
+  Stop 2 (Railway Station): board 15, alight 45 -> onboard 15 (OK)
+  Stop 3 (Benz Circle): board -5, alight 5 -> REJECTED
+        -> boarding count -5 cannot be negative
+  Stop 4 (Auto Nagar): board 4, alight 9 -> onboard 10 (OK)
+  Stop 9 (?): board 3, alight 1 -> REJECTED
+        -> stop index 9 is outside the route
+  Stop 6 (Gannavaram): board 75, alight 2 -> REJECTED
+        -> boarding 75 seems unrealistic (max 60)
+
+All counts are hypothetical and used only for this activity.
